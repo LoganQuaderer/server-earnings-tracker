@@ -1,9 +1,5 @@
-import Dashboard from "@/components/Dashboard"
+import { redirect } from "next/navigation"
 
 export default function Home() {
-  return (
-    <div className="container mx-auto py-10">
-      <Dashboard />
-    </div>
-  )
+  redirect("/dashboard")
 }
